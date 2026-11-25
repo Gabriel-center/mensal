@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b6b52">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Mensalinha · Painel</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">M</span>Mensalinha</a>
+  <span class="niche-pill" id="nichePill"></span>
+</header>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="hoje" class="active"><span class="ic">◎</span>Hoje</button>
+  <button data-tab="clientes"><span class="ic">☰</span><span id="tabClientes">Clientes</span></button>
+  <button data-tab="mes"><span class="ic">▦</span>Mês</button>
+  <button data-tab="ajustes"><span class="ic">⚙</span>Ajustes</button>
+</nav>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-x" id="modalClose" aria-label="Fechar">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="assets/qrcode.js"></script>
+<script src="assets/pix.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
